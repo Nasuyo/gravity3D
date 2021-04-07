@@ -2,4 +2,7 @@
 Small repository for near field gravity computations.
 ##
 What happens when you lower an elevator with 1000kg in it from groundfloor to cellar?
-![plot](./aufzug_1t_draufsicht_keller_zoom_volume.png)
+![plot](./elevator.png)
+##
+What happens when a 20t lorry parks next to the building?
+![plot](./lorry.png)
