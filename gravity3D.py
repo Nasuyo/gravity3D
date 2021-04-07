@@ -40,7 +40,7 @@ fpq = np.array([[0, 0, 0], [40, 0, 0], [44, -14, 0], [74, -6, 0], [74, 6, 0],
                 [50, 6, 0], [47, 18, 0], [0, 18, 0], [0, 0, 0]])  # [y, x, z] [m]
 
 # measuring properties
-extent = np.array([-20, 80, -20, 20])  # [x_min, x_max, y_min, y_max]  computation area
+extent = np.array([-30, 80, -20, 20])  # [x_min, x_max, y_min, y_max]  computation area
 extent_z = np.array([-10, 6])
 mheight = -3.9  # [m] measuring height; -3.9 would be 0.3m above cellar floor
 
@@ -107,7 +107,7 @@ mass_plane = np.array([[mass_x[0], mass_y[0]], [mass_x[0], mass_y[1]],
                       [mass_x[1], mass_y[1]], [mass_x[1], mass_y[0]], [mass_x[0], mass_y[0]]])
 fig, ax = plt.subplots(figsize=(6, 12))
 img = ax.imshow(np.flipud(gg_core[:, :, m_zindex]), extent=extent_core, interpolation='None', norm=colors.LogNorm())
-fig.colorbar(img, fraction=0.025, pad=0.04, label='-g [m/s²]')
+fig.colorbar(img, fraction=0.020, pad=0.04, label='-g [m/s²]')
 ax.plot(fpq[:, 0], fpq[:, 1], 'k')
 ax.plot(mass_plane[:, 0], mass_plane[:, 1], 'k')
 ax.set_aspect('equal')
